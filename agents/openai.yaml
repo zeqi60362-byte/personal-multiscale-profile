@@ -1,0 +1,4 @@
+interface:
+  display_name: "Personal Multiscale Profile"
+  short_description: "Structured, evidence-bounded personal profiles"
+  default_prompt: "Use $personal-multiscale-profile to begin a structured self-profile interview."

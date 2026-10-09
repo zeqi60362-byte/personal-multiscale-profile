@@ -1,0 +1,119 @@
+{
+  "schema_version": "0.1.0",
+  "profile_id": "synthetic-example-2026-10-09-v1",
+  "subject": {
+    "label": "Synthetic Example",
+    "relationship": "self"
+  },
+  "created_at": "2026-10-09",
+  "updated_at": "2026-10-09",
+  "status": "draft",
+  "consent": {
+    "scope": "Synthetic example for repository documentation only.",
+    "sources": ["self_report"],
+    "allow_persistent_storage": false,
+    "allow_external_sharing": true
+  },
+  "scales": {
+    "micro": {
+      "summary": "The person reports working best when a complex task is broken into visible blocks.",
+      "evidence_ids": ["E001"],
+      "confidence": "low",
+      "unknowns": ["Whether this pattern holds outside academic work"],
+      "interpretation": "May rely on external structure to regulate attention and momentum."
+    },
+    "meso": {
+      "summary": "The person repeatedly combines visual synthesis with quantitative evidence.",
+      "evidence_ids": ["E002", "E003"],
+      "confidence": "medium",
+      "unknowns": ["Independent leadership beyond collaborative projects"],
+      "interpretation": "Current strength lies in bridging analysis, design, and communication."
+    },
+    "macro": {
+      "summary": "The person is motivated by problems connecting space, fairness, and lived experience.",
+      "evidence_ids": ["E004"],
+      "confidence": "medium",
+      "unknowns": ["How stable this motivation is outside institutional incentives"],
+      "interpretation": "Values appear to be expressed through problem selection rather than explicit ideology."
+    },
+    "temporal": {
+      "summary": "The trajectory shows progressive movement from design production toward research.",
+      "evidence_ids": ["E002", "E004"],
+      "confidence": "medium",
+      "unknowns": ["Whether the change represents a durable direction or a temporary opportunity"],
+      "interpretation": "The evidence supports an emerging research identity, not a fixed career conclusion."
+    },
+    "contextual": {
+      "summary": "The person reports stronger output in environments with clear feedback and cross-disciplinary peers.",
+      "evidence_ids": ["E001", "E003"],
+      "confidence": "low",
+      "unknowns": ["Sensitivity to hierarchy, deadlines, and resource scarcity"],
+      "interpretation": "Context appears to affect both output and confidence."
+    }
+  },
+  "evidence": [
+    {
+      "id": "E001",
+      "type": "self_report",
+      "captured_at": "2026-10-09",
+      "summary": "Synthetic subject reports using visible task blocks to maintain momentum.",
+      "reliability": "medium",
+      "sensitive": false,
+      "quote": "I need to see the shape of the work before I can trust my own plan.",
+      "context": "Synthetic baseline interview"
+    },
+    {
+      "id": "E002",
+      "type": "artifact",
+      "captured_at": "2026-10-09",
+      "summary": "Synthetic portfolio combines spatial analysis, diagrams, and written argument.",
+      "reliability": "high",
+      "sensitive": false,
+      "context": "Synthetic portfolio review"
+    },
+    {
+      "id": "E003",
+      "type": "self_report",
+      "captured_at": "2026-10-09",
+      "summary": "Synthetic subject reports learning methods faster through project use than abstract instruction.",
+      "reliability": "medium",
+      "sensitive": false,
+      "context": "Synthetic learning-history question"
+    },
+    {
+      "id": "E004",
+      "type": "artifact",
+      "captured_at": "2026-10-09",
+      "summary": "Synthetic research topics repeatedly connect spatial form with social inequality.",
+      "reliability": "high",
+      "sensitive": false,
+      "context": "Synthetic research-question inventory"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "C001",
+      "summary": "The subject describes broad curiosity but also reports difficulty choosing a long-term focus.",
+      "evidence_ids": ["E002", "E004"],
+      "status": "unresolved",
+      "next_check": "Review project choices over the next three updates."
+    }
+  ],
+  "development_targets": [
+    {
+      "id": "D001",
+      "target": "Record one decision each week with the options considered and the result.",
+      "why": "Test whether the reported analytical-first pattern is stable.",
+      "observable_result": "Three decisions with evidence of process and outcome.",
+      "review_date": "2026-11-09"
+    }
+  ],
+  "revision_history": [
+    {
+      "revision": 1,
+      "date": "2026-10-09",
+      "change": "Created synthetic baseline template.",
+      "status": "draft"
+    }
+  ]
+}

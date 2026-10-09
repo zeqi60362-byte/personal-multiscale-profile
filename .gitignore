@@ -1,0 +1,19 @@
+# Private profile data
+profiles/
+private/
+*.private.json
+*.private.md
+
+# Local configuration and secrets
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+
+# OS and editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

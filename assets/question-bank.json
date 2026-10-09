@@ -1,0 +1,256 @@
+{
+  "version": "0.1.0",
+  "usage": {
+    "selection_rule": "Use 5-10 questions per session. Stop when answers stop producing concrete evidence.",
+    "follow_up_rule": "Ask for recent examples, contrasts, choices not taken, and disconfirming evidence before interpreting.",
+    "output_rule": "Record evidence before interpretation and mark confidence for every synthesis."
+  },
+  "rounds": [
+    {
+      "id": "round_1_timeline",
+      "title": "Timeline and Context",
+      "questions": [
+        {
+          "id": "Q001",
+          "prompt": "Walk through the five decisions or events that most changed the direction of your life, in chronological order.",
+          "follow_up": "What changed immediately afterward in your behavior, relationships, or resources?",
+          "evidence_target": "Turning points, constraints, and consequences",
+          "scales": ["temporal", "contextual"]
+        },
+        {
+          "id": "Q002",
+          "prompt": "Which environments have made you feel unusually capable, and which have made you feel unusually limited?",
+          "follow_up": "What was present or absent in each environment?",
+          "evidence_target": "Context-dependent performance",
+          "scales": ["contextual", "meso"]
+        },
+        {
+          "id": "Q003",
+          "prompt": "What recurring responsibilities or constraints shaped your early habits?",
+          "follow_up": "Which habits from that period still show up now?",
+          "evidence_target": "Formative routines and adaptation",
+          "scales": ["micro", "temporal"]
+        },
+        {
+          "id": "Q004",
+          "prompt": "Which transition was harder than you expected, and what did you actually do when the difficulty appeared?",
+          "follow_up": "What would you do differently with the same constraints?",
+          "evidence_target": "Adaptation under pressure",
+          "scales": ["temporal", "micro"]
+        },
+        {
+          "id": "Q005",
+          "prompt": "What part of your history do you tend to omit when presenting yourself to others?",
+          "follow_up": "Why does that omission feel necessary, and what would change if it were included?",
+          "evidence_target": "Identity presentation and unresolved material",
+          "scales": ["macro", "contextual"]
+        }
+      ]
+    },
+    {
+      "id": "round_2_capability",
+      "title": "Capability and Output",
+      "questions": [
+        {
+          "id": "Q006",
+          "prompt": "What do people reliably ask you to help with, and what do you actually deliver?",
+          "follow_up": "Give one recent example and one example where the pattern did not hold.",
+          "evidence_target": "Observed value to others",
+          "scales": ["meso", "contextual"]
+        },
+        {
+          "id": "Q007",
+          "prompt": "Give three examples where your contribution produced a visible result. What exactly did you do?",
+          "follow_up": "Which part was unique to you, and which part was shared?",
+          "evidence_target": "Capability backed by outcomes",
+          "scales": ["meso"]
+        },
+        {
+          "id": "Q008",
+          "prompt": "How do you learn a new method? Recall a recent example from beginning to usable skill.",
+          "follow_up": "What slowed you down, and what made the method finally click?",
+          "evidence_target": "Learning strategy",
+          "scales": ["meso", "micro"]
+        },
+        {
+          "id": "Q009",
+          "prompt": "Where do you produce results disproportionate to effort, and where does effort fail to produce results?",
+          "follow_up": "What differs between those two situations?",
+          "evidence_target": "Leverage and friction",
+          "scales": ["meso", "contextual"]
+        },
+        {
+          "id": "Q010",
+          "prompt": "Which artifact best represents how you work, and why did you choose it?",
+          "follow_up": "What does it reveal that a verbal description would miss?",
+          "evidence_target": "Artifact-based evidence",
+          "scales": ["meso", "temporal"]
+        }
+      ]
+    },
+    {
+      "id": "round_3_cognition",
+      "title": "Cognition and Decisions",
+      "questions": [
+        {
+          "id": "Q011",
+          "prompt": "Describe a consequential decision in detail. What did you notice, ignore, consider, and choose?",
+          "follow_up": "What did you know only after the decision?",
+          "evidence_target": "Decision process",
+          "scales": ["micro", "temporal"]
+        },
+        {
+          "id": "Q012",
+          "prompt": "When evidence conflicts with intuition, what do you do? Give a specific example.",
+          "follow_up": "When has either side been wrong?",
+          "evidence_target": "Analytical-intuitive balance",
+          "scales": ["micro", "contextual"]
+        },
+        {
+          "id": "Q013",
+          "prompt": "How do you decide that a problem is worth working on?",
+          "follow_up": "What kinds of problems do you reject even when they are prestigious or well paid?",
+          "evidence_target": "Problem selection and values",
+          "scales": ["macro", "meso"]
+        },
+        {
+          "id": "Q014",
+          "prompt": "Recall a time you changed your mind. What evidence or experience caused the change?",
+          "follow_up": "What made the old belief attractive in the first place?",
+          "evidence_target": "Belief revision",
+          "scales": ["micro", "temporal"]
+        },
+        {
+          "id": "Q015",
+          "prompt": "What kind of uncertainty is most difficult for you to tolerate, and how do you respond to it?",
+          "follow_up": "Describe a time you acted before you felt certain.",
+          "evidence_target": "Uncertainty management",
+          "scales": ["micro", "contextual"]
+        }
+      ]
+    },
+    {
+      "id": "round_4_motivation",
+      "title": "Motivation and Values",
+      "questions": [
+        {
+          "id": "Q016",
+          "prompt": "What do you repeatedly spend time, attention, or money on even without external reward?",
+          "follow_up": "What need or value does that activity serve?",
+          "evidence_target": "Enacted motivation",
+          "scales": ["macro", "micro"]
+        },
+        {
+          "id": "Q017",
+          "prompt": "What have you sacrificed for a principle, and what would you refuse to sacrifice?",
+          "follow_up": "How has that boundary changed over time?",
+          "evidence_target": "Values under pressure",
+          "scales": ["macro", "temporal"]
+        },
+        {
+          "id": "Q018",
+          "prompt": "When do you feel most engaged, and when do you become drained or detached?",
+          "follow_up": "What is the observable behavior at each extreme?",
+          "evidence_target": "Energy and engagement conditions",
+          "scales": ["micro", "contextual"]
+        },
+        {
+          "id": "Q019",
+          "prompt": "Which praise or criticism stays with you, and why does it land so strongly?",
+          "follow_up": "Does the reaction reveal a standard, fear, or aspiration?",
+          "evidence_target": "Identity sensitivities",
+          "scales": ["macro", "micro"]
+        },
+        {
+          "id": "Q020",
+          "prompt": "What future outcome would still feel meaningful if nobody recognized you for it?",
+          "follow_up": "What current choice is aligned or misaligned with that outcome?",
+          "evidence_target": "Intrinsic direction",
+          "scales": ["macro", "temporal"]
+        }
+      ]
+    },
+    {
+      "id": "round_5_social_context",
+      "title": "Social Roles and Environment",
+      "questions": [
+        {
+          "id": "Q021",
+          "prompt": "How does your behavior change with peers, authorities, clients, or people you lead?",
+          "follow_up": "What stays consistent across all of them?",
+          "evidence_target": "Social adaptation",
+          "scales": ["meso", "contextual"]
+        },
+        {
+          "id": "Q022",
+          "prompt": "Describe a conflict where you were partly wrong. What did you do afterward?",
+          "follow_up": "What repair strategy worked or failed?",
+          "evidence_target": "Conflict and accountability",
+          "scales": ["meso", "macro"]
+        },
+        {
+          "id": "Q023",
+          "prompt": "What feedback do others give you repeatedly, and which parts do you accept or reject?",
+          "follow_up": "What evidence supports each response?",
+          "evidence_target": "External perspective",
+          "scales": ["meso", "micro"]
+        },
+        {
+          "id": "Q024",
+          "prompt": "In a team, what role do you naturally take before anyone assigns one?",
+          "follow_up": "When has that role helped, and when has it become a limitation?",
+          "evidence_target": "Emergent team role",
+          "scales": ["meso", "contextual"]
+        },
+        {
+          "id": "Q025",
+          "prompt": "What environmental conditions reliably help you think, produce, and recover?",
+          "follow_up": "What conditions do you keep tolerating even though they do not work?",
+          "evidence_target": "Optimal and harmful contexts",
+          "scales": ["contextual", "micro"]
+        }
+      ]
+    },
+    {
+      "id": "round_6_calibration",
+      "title": "Contradictions and Future",
+      "questions": [
+        {
+          "id": "Q026",
+          "prompt": "Choose a repeated pattern. What are two competing explanations for it?",
+          "follow_up": "What evidence would distinguish them?",
+          "evidence_target": "Causal calibration",
+          "scales": ["micro", "temporal"]
+        },
+        {
+          "id": "Q027",
+          "prompt": "Where does your self-description differ from what your behavior or others suggest?",
+          "follow_up": "Which account has stronger evidence, and in what context?",
+          "evidence_target": "Stated-versus-enacted identity",
+          "scales": ["macro", "meso"]
+        },
+        {
+          "id": "Q028",
+          "prompt": "What would a thoughtful critic say is your most important blind spot?",
+          "follow_up": "How would you test whether the criticism is accurate?",
+          "evidence_target": "Disconfirming evidence",
+          "scales": ["macro", "micro"]
+        },
+        {
+          "id": "Q029",
+          "prompt": "Describe three plausible futures: one likely, one desired, and one feared. What choices lead toward each?",
+          "follow_up": "Which choice is reversible, and which is costly to reverse?",
+          "evidence_target": "Future orientation and trade-offs",
+          "scales": ["temporal", "macro"]
+        },
+        {
+          "id": "Q030",
+          "prompt": "What small experiment in the next 30 days would test an important uncertainty in this profile?",
+          "follow_up": "What observable result would confirm, weaken, or complicate the current interpretation?",
+          "evidence_target": "Profile calibration",
+          "scales": ["micro", "contextual"]
+        }
+      ]
+    }
+  ]
+}
